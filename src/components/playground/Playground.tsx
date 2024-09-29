@@ -17,7 +17,7 @@ export default function Playground({ onConnect }: PlaygroundProps) {
 
   useEffect(() => {
     if (roomState === ConnectionState.Connected) {
-      localParticipant.setCameraEnabled(true);
+      localParticipant.setCameraEnabled(false);
       localParticipant.setMicrophoneEnabled(true);
     }
   }, [localParticipant, roomState]);
