@@ -26,7 +26,7 @@ export default async function handleToken(
     }
 
     const roomName = `room-${generateRandomAlphanumeric(4)}-${generateRandomAlphanumeric(4)}`;
-    const identity = `identity-${generateRandomAlphanumeric(4)}`
+    const identity = `fullscreen-${generateRandomAlphanumeric(4)}`
 
     const grant: VideoGrant = {
       room: roomName,
